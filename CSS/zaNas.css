@@ -1,8 +1,22 @@
 /* ==========================================================================
    ABOUT PAGE SPECIFIC STYLES
    ========================================================================== */
-.section { background: #fff; margin: 80px auto; border-radius: 35px; box-shadow: var(--shadow-lg); max-width: 1400px; padding: 60px 10%; }
-.section h2 { color: var(--ricko-blue); margin-bottom: 20px; font-size: 2rem; }
+.section { 
+    background: #fff; 
+    margin: 80px auto; 
+    border-radius: 35px; 
+    box-shadow: var(--shadow-lg); 
+    max-width: 1300px; /* Unified width for all sections */
+    width: 90%; 
+    padding: 60px 5%; 
+    box-sizing: border-box;
+}
+
+.section h2 { 
+    color: var(--ricko-blue); 
+    margin-bottom: 20px; 
+    font-size: 2rem; 
+}
 
 /* HERO */
 .about-hero { width: 100%; height: 80vh; background-image: url("../IMAGES/позадина.webp"); background-size: cover; background-position: center; position: relative; }
@@ -40,8 +54,6 @@
 .admin-person p { font-size: 0.85rem; color: var(--steel-blue); }
 
 /* ================= PROFESSORS ================= */
-.teachers { background: white; }
-.section.teachers { padding: 50px 20px; max-width: 1200px; margin: 0 auto; }
 .section.teachers h2 { text-align: center; font-size: 3rem; margin-bottom: 40px; color: var(--ricko-blue); }
 
 .subject-group { margin-bottom: 60px; }
@@ -65,24 +77,24 @@
 
 @media (max-width: 768px) {
     .about-hero-overlay h1 { font-size: 2.8rem; }
+    
+    /* Unified Mobile Section Rules */
+    .section { max-width: 95% !important; width: 95%; padding: 40px 20px !important; margin: 40px auto !important; overflow: hidden; }
+    
     .section.teachers h2 { font-size: 2.5rem; }
     .subject-group { text-align: center; }
     .subject-group h3 { font-size: 1.8rem; }
     .teacher-card img { height: 180px; }
-    .headmaster-card { flex-direction: column; text-align: center; justify-content: center; align-items: center; }
+    .headmaster-card { flex-direction: column; text-align: center; justify-content: center; align-items: center; gap: 40px; }
     .history-wrapper { grid-template-columns: 1fr; gap: 30px; }
     .history-video { max-width: 100%; }
     .history-text { font-size: 0.95rem; line-height: 1.6; margin-left: 0; text-align: center; }
     .about-hero { background-position: left top; }
     .slider-controls { justify-content: center; }
     .history-video iframe { height: auto; aspect-ratio: 16 / 9; }
-    .admin-secondary-grid {  grid-template-columns: 1fr; gap: 30px; }
-    .admin-person { max-width: 100%; }
-    section.headmaster { max-width: 95% !important; padding: 40px 20px !important; margin: 40px auto !important; overflow: hidden; }
-    .headmaster-card { display: flex !important; flex-direction: column !important; align-items: center !important; gap: 40px !important; width: 100% !important; }
-    .admin-secondary-grid { display: flex !important; flex-direction: column !important; align-items: center !important; gap: 40px !important; width: 100% !important; }
-    .admin-person { width: 100% !important; max-width: 280px; margin: 0 auto !important; }
-    .admin-person img { width: 100% !important; height: auto !important; max-width: 220px; margin: 0 auto 15px auto !important; }
+    .admin-secondary-grid { display: flex; flex-direction: column; align-items: center; gap: 40px; width: 100%; }
+    .admin-person { width: 100%; max-width: 280px; margin: 0 auto; }
+    .admin-person img { width: 100%; height: auto; max-width: 220px; margin: 0 auto 15px auto; }
 }
 
 @media (max-width: 480px) {
