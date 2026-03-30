@@ -75,7 +75,21 @@ document.addEventListener('DOMContentLoaded', () => {
         setInterval(nextSlide, 5000);
     }
 
+    // --- Slider Cards (index.html) ---
+    window.slideRight = function() {
+        const sliderTrack = document.getElementById('cardTrack');
+        if (sliderTrack) {
+            sliderTrack.scrollBy({ left: 350, behavior: 'smooth' });
+        }
+    };
 
+    window.slideLeft = function() {
+        const sliderTrack = document.getElementById('cardTrack');
+        if (sliderTrack) {
+            sliderTrack.scrollBy({ left: -350, behavior: 'smooth' });
+        }
+    };
+    
     // --- Stats Counter (index.html) ---
     const statsSection = document.getElementById('stats-section');
     if (statsSection) {
