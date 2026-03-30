@@ -79,6 +79,44 @@
     .headmaster-card { flex-direction: column; align-items: center; gap: 30px; }
     .admin-secondary-grid {  grid-template-columns: 1fr; gap: 30px; }
     .admin-person { max-width: 100%; }
+   section.headmaster {
+        max-width: 95% !important; /* Да не излегува од екранот */
+        padding: 40px 20px !important; /* Помал padding за мобилен */
+        margin: 40px auto !important; /* Центрирање */
+        overflow: hidden; /* Спречува елементи да „бегаат“ надвор */
+    }
+
+    /* 2. Прв ред (Директор/Заменик) - Еден под друг */
+    .headmaster-card {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 40px !important;
+        width: 100% !important;
+    }
+
+    /* 3. Втор ред (Останати 4) - Еден под друг */
+    .admin-secondary-grid {
+        display: flex !important; /* Го менуваме grid во flex за полесна контрола */
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 40px !important;
+        width: 100% !important;
+    }
+
+    /* 4. Поединечна картичка */
+    .admin-person {
+        width: 100% !important;
+        max-width: 280px; /* Да не бидат преголеми сликите */
+        margin: 0 auto !important;
+    }
+
+    .admin-person img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 220px; /* Иста големина како на десктоп */
+        margin: 0 auto 15px auto !important;
+    }
 }
 
 @media (max-width: 480px) {
