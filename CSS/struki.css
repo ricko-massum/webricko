@@ -1,0 +1,54 @@
+/* Adjustments for Struki body background specifically */
+body { background-color: #f0f2f5; }
+
+/* ======================================================
+   GRID LAYOUT 
+   ====================================================== */
+.section-header { text-align: center; padding: 80px 20px 40px; max-width: 1200px; margin: 0 auto; }
+.section-header h2 { font-size: 2.8rem; color: #0F3460; margin-bottom: 10px; font-weight: 800; }
+
+.majors-wrapper { display: flex; flex-direction: column; align-items: center; gap: 30px; max-width: 1400px; margin: 0 auto; padding: 0 20px 80px; }
+.grid-row { display: flex; justify-content: center; width: 100%; gap: 30px; flex-wrap: wrap; }
+
+/* CARD STYLE */
+.major-item { position: relative; border-radius: 25px; overflow: hidden; cursor: pointer; box-shadow: var(--shadow-sm); transition: var(--transition-smooth); flex: 0 1 calc((100% - 60px) / 3); min-width: 320px; max-width: 480px; height: 450px; border: 1px solid rgba(0,0,0,0.08); }
+.major-item:hover { transform: translateY(-10px) scale(1.02); box-shadow: var(--shadow-md); z-index: 2; }
+.major-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; display: block; }
+
+.major-item::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(15, 52, 96, 0.2), rgba(15, 52, 96, 0.8)); opacity: 0.85; transition: opacity 0.4s; z-index: 1; }
+.major-item:hover::before { opacity: 0.7; }
+.major-item:hover img { transform: scale(1.08); }
+
+.major-title { position: absolute; top: 30px; right: 30px; font-size: 1.6rem; font-weight: 800; color: var(--white); text-transform: uppercase; letter-spacing: 1px; z-index: 2; text-shadow: 0 4px 10px rgba(0,0,0,0.5); text-align: right; }
+
+.btn-learn-more { position: absolute; bottom: 30px; left: 30px; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; background-color: var(--orange); color: var(--white); border: none; padding: 14px 32px; border-radius: 50px; z-index: 2; display: inline-block; transition: all 0.3s ease; box-shadow: 0 8px 20px rgba(255, 159, 28, 0.3); }
+.major-item:hover .btn-learn-more { background-color: #e88e17; transform: translateY(-5px); box-shadow: 0 12px 25px rgba(255, 159, 28, 0.4); }
+
+/* ======================================================
+   MODAL STYLES 
+   ====================================================== */
+.modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(15, 52, 96, 0.85); backdrop-filter: blur(5px); padding: 20px; }
+.modal-content { background-color: #fff; margin: 5% auto; padding: 40px; border-radius: 20px; width: 90%; max-width: 900px; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.3); animation: modalFadeIn 0.4s; max-height: 85vh; overflow-y: auto; }
+@keyframes modalFadeIn { from {opacity: 0; transform: translateY(-30px) scale(0.95);} to {opacity: 1; transform: translateY(0) scale(1);} }
+
+.close-btn { color: #aaa; float: right; font-size: 32px; font-weight: bold; cursor: pointer; position: absolute; top: 15px; right: 25px; z-index: 10; transition: 0.2s; }
+.close-btn:hover { color: var(--orange); transform: rotate(90deg); }
+
+.modal-body h2 { color: #0F3460; margin-bottom: 25px; border-bottom: 3px solid var(--orange); padding-bottom: 10px; font-weight: 800; }
+.download-section { background-color: #fffdf5; border-left: 5px solid var(--orange); padding: 25px; margin-bottom: 35px; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: var(--shadow-sm); }
+.download-section h3 { color: #0F3460; font-size: 1.2rem; margin-bottom: 15px; font-weight: 700; }
+
+.download-link-btn { display: inline-flex; align-items: center; gap: 10px; background-color: var(--orange); color: var(--white); padding: 12px 30px; border-radius: 50px; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; box-shadow: 0 5px 15px rgba(255, 159, 28, 0.3); }
+.download-link-btn:hover { background-color: #e88e17; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(255, 159, 28, 0.4); }
+
+.sub-major { margin-bottom: 35px; background: #fdfdfd; padding: 25px; border-radius: 15px; border-left: 4px solid var(--orange); box-shadow: var(--shadow-sm); }
+.sub-major h3 { color: #0F3460; margin-bottom: 20px; font-size: 1.3rem; font-weight: 800; }
+.year-block { margin-bottom: 15px; }
+.year-title { font-weight: 800; color: #0F3460; margin-bottom: 8px; display: inline-block; background: var(--color-light-blue); padding: 4px 12px; border-radius: 6px; font-size: 0.85rem; }
+
+.subject-list { list-style-type: disc; margin-left: 20px; font-size: 0.95rem; color: #555; font-weight: 500; }
+.subject-list li { margin-bottom: 6px; }
+
+@media (max-width: 768px) {
+    .major-item { flex: 0 1 100%; }
+}

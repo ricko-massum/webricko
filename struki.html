@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>СОУ „Ристе Ристески - Ричко“</title>
+
+    
+
+    <link rel="stylesheet" href="struki.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link rel="icon" type="image/x-icon" href="/IMAGES/favicon.png">
+        <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2026/03/01/15/20260301150014-WPFTWD2L.js" defer></script>
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/struki.css">
+    
+</head>
+<body>
+
+    <header>
+        
+        <div class="logo-badge" id="main-logo">
+            <img src="IMAGES/Лого.png" alt="Лого СОУ Ристе Ристески Ричко">
+        </div>
+ <div class="header-title reveal d-100"></div>
+        <div class="header-title">
+            <br><br>
+            <strong>СОУ „Ристе Ристески</strong>
+            <span>- Ричко“</span>
+        </div>
+
+        <nav>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="reveal d-100"><a href="index.html" class="nav-link">Почетна</a></li>
+                <li class="reveal d-100 dropdown">
+            <a href="zaNas.html" class="nav-link">За нас <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="zaNas.html#history">Историјат</a></li>
+                <li><a href="zaNas.html#headmaster">Административен кадар</a></li>
+                <li><a href="zaNas.html#teachers">Наставен кадар</a></li>
+            </ul>
+        </li>
+                <li class="reveal d-200"><a href="nastani.html" class="nav-link">Настани</a></li>
+                <li class="reveal d-300"><a href="struki.html" class="nav-link">Квалификации и сектори</a></li>
+               <li class="reveal d-400"><a href="index.html#location" class="nav-link">Контакт</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-header">
+            <h2 class="reveal" >Наши сектори</h2>
+            <p class="reveal" >Откријте ја вашата иднина.</p>
+        </section>
+        <div class="majors-wrapper">
+            <div class="grid-row">
+                <div class="major-item reveal" onclick="openModal('modal-elektro')">
+                    <img src="IMAGES/elektrotehnicka.png" alt="Електротехника">
+                    <h3 class="major-title">Електротехника</h3>
+                    <div class="btn-learn-more">Дознај Повеќе</div>
+                </div>
+                <div class="major-item reveal" onclick="openModal('modal-mashin')">
+                    <img src="IMAGES/masinska.jpg" alt="Машинство">
+                    <h3 class="major-title">Машинство</h3>
+                    <div class="btn-learn-more">Дознај Повеќе</div>
+                </div>
+                <div class="major-item reveal" onclick="openModal('modal-soobrakaj')">
+                    <img src="IMAGES/patensob.jpg" alt="Сообраќај">
+                    <h3 class="major-title">Сообраќај и транспорт</h3>
+                    <div class="btn-learn-more">Дознај Повеќе</div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="major-item reveal" onclick="openModal('modal-graf')">
+                    <img src="IMAGES/graficko.jpg" alt="Графичарство">
+                    <h3 class="major-title">Графичарство</h3>
+                    <div class="btn-learn-more">Дознај Повеќе</div>
+                </div>
+                <div class="major-item reveal" onclick="openModal('modal-sport')">
+                    <img src="IMAGES/sportska.jpg" alt="Спортска Гимназија">
+                    <h3 class="major-title">Спортска Гимназија</h3>
+                    <div class="btn-learn-more">Дознај Повеќе</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="modal-elektro" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-elektro')">&times;</span>
+            <div class="modal-body">
+                <h2>Електротехника</h2>
+                
+                <div class="download-section">
+                    <h3>Решение и наставен план</h3>
+                    <a href="https://drive.google.com/file/d/1KZvQm6RnBWRiX3RGiy9PAkon2f2kBXEa/view" target="_blank" class="download-link-btn">
+                        <i class="fa-solid fa-file-lines"></i> Отвори документ
+                    </a>
+                </div>
+                 <div class="sub-major">
+                    <h3>1. Електротехничар за електроника и телекомуникации</h3>
+                    <div class="year-block"><div class="year-title">I ГОДИНА</div><ul class="subject-list"><li>Електротехнички материјали</li><li>Електротехника</li><li>Современи технологии во економски сектори</li><li>Техничка комуникација</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА</div><ul class="subject-list"><li>Електрични мерења</li><li>Електроника</li><li>Електротехника</li><li>Основи на телекомуникации</li><li>Технички софтверски алатки</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Аудиотехника</li><li>Автоматика</li><li>Автомобилска електроника</li><li>Дигитална електроника</li><li>Дигитални телекомуникации</li><li>Енергетска електроника</li><li>Компјутерски техники</li><li>Мерно-испитни техники и дијагностика</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">IV ГОДИНА</div><ul class="subject-list"><li>Енергетска ефикасност на објекти</li><li>Програмабилни компоненти и системи</li><li>Радио и ТВ преносни системи</li><li>Сигурносни и заштитни системи</li><li>Снимање и монтажа на аудио и видео материјали</li><li>Телекомуникациски системи и мрежи</li><li>Видеотехника</li><li>Учење преку работа</li></ul></div>
+                </div>
+
+                <div class="sub-major">
+                    <h3>2. Електротехничар – енергетичар</h3>
+                    <div class="year-block"><div class="year-title">I ГОДИНА</div><ul class="subject-list"><li>Електротехнички материјали</li><li>Електротехника</li><li>Современи технологии во економски сектори</li><li>Техничка комуникација</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА</div><ul class="subject-list"><li>Електрични инсталации</li><li>Електрични мерења</li><li>Електрично осветление</li><li>Електроника</li><li>Електротехника</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Автоматика</li><li>Електрични апарати и уреди</li><li>Електрични машини и трансформатори</li><li>Електрични мрежи и водови</li><li>Информатички технологии во електроенергетика</li><li>Обновливи извори на енергија</li><li>Заштита на електрични инсталации</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">IV ГОДИНА</div><ul class="subject-list"><li>Електрични централи</li><li>Електрични возила</li><li>Електроенергетски постројки со управување</li><li>Електромоторни погони и управување</li><li>Енергетска ефикасност на објекти</li><li>Индустриска електроенергетика</li><li>Заштита на електрични постројки</li><li>Учење преку работа</li></ul></div>
+                </div>
+
+                <div class="sub-major">
+                    <h3>3. Електротехничар за компјутерска техника и автоматика</h3>
+                    <div class="year-block"><div class="year-title">I ГОДИНА</div><ul class="subject-list"><li>Електротехнички материјали</li><li>Електротехника</li><li>Современи технологии на економските сектори на пазарот на труд</li><li>Техничка комуникација</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА</div><ul class="subject-list"><li>Електрични мерења</li><li>Електроника</li><li>Електротехника</li><li>Логички кола</li><li>Микрокомпјутери и нивно програмирање</li><li>Основи на програмирање</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Дигитални системи и хардвер</li><li>Практична настава</li><li>Програмирање и софтвер</li><li>Автоматизирани системи</li><li>Мултимедија</li><li>Објектно ориентирано програмирање</li><li>Основи на дигитални системи</li><li>Процесно управување</li><li>Системи за автоматско управување</li><li>Уредување на веб-страници</li><li>Веб програмирање</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">IV ГОДИНА</div><ul class="subject-list"><li>3Д моделирање</li><li>Бази на податоци</li><li>Енергетска ефикасност на објекти</li><li>Компјутерски системи и мрежи</li><li>Микропроцесори и микроконтролери</li><li>Програмски јазици</li><li>Роботика</li><li>Учење преку работа</li></ul></div>
+                </div>
+
+                <div class="sub-major">
+                    <h3>4. Техничар за индустриска мехатроника</h3>
+                    <div class="year-block"><div class="year-title">I ГОДИНА</div><ul class="subject-list"><li>Електротехника</li><li>Електротехнички материјали</li><li>Основи на машинство</li><li>Техничка комуникација</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА</div><ul class="subject-list"><li>Електрични мерења</li><li>Електроника</li><li>Хидраулика и пневматика</li><li>Логички кола</li><li>Основи на програмирање</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Автоматика</li><li>Индустриска електроенергетика – изборна</li><li>Мехатронички системи</li><li>Обновливи извори на енергија – изборна</li><li>Основи на дигитални системи</li><li>Технологија на обработка – изборна</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">IV ГОДИНА</div><ul class="subject-list"><li>Електрични возила – изборна</li><li>Енергетска ефикасност на објекти – изборна</li><li>Мехатронички системи</li><li>Микропроцесори и микроконтролери</li><li>Процесно управување</li><li>Роботика</li><li>Учење преку работа</li></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-mashin" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-mashin')">&times;</span>
+            <div class="modal-body">
+                <h2>Машинство</h2>
+                <div class="download-section">
+                    <h3>Решение и наставен план</h3>
+                    <a href="https://drive.google.com/file/d/1FpTnqA7cZRV5fv-NSsU8Om2u4NfJNm6m/view" target="_blank" class="download-link-btn">
+                        <i class="fa-solid fa-file-lines"></i> Отвори документ
+                    </a>
+                </div>
+                <div class="sub-major">
+                    <h3>1. Машински техничар за моторни возила</h3>
+                    <div class="year-block"><div class="year-title">I ГОДИНА</div><ul class="subject-list"><li>Машински елементи со механика</li><li>Машинство и други сектори</li><li>Техничко цртање со КАД</li><li>Технологија на обработка</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА</div><ul class="subject-list"><li>Машински елементи со механика</li><li>Техничко цртање со КАД</li><li>Технологија на обработка</li><li>Термодинамика</li><li>Електротехника</li><li>Мотори со внатрешно согорување</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Обновливи извори на енергија</li><li>Организациско однесување</li><li>Хидраулика и пневматика</li><li>Електроника</li><li>Испитување и дијагностика на возилата</li><li>Мотори со внатрешно согорување</li><li>Моторни возила</li><li>Уреди и опрема кај моторните возила</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">IV ГОДИНА</div><ul class="subject-list"><li>Бизнис и претприемништво – изборен</li><li>Енергетска ефикасност и системи за греење, вентилација и климатизација</li><li>Електроника</li><li>Моторни возила</li><li>Одржување на моторни возила</li><li>Современи системи за безбедност на моторни возила</li><li>Учење преку работа</li></ul></div>
+                </div>
+                <div class="sub-major">
+                    <h3>2. Машинско-енергетски техничар</h3>
+                    <div class="year-block"><div class="year-title">I ГОДИНА</div><ul class="subject-list"><li>Машински елементи со механика</li><li>Машинство и други сектори</li><li>Техничко цртање со КАД</li><li>Технологија на обработка</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА</div><ul class="subject-list"><li>Машински елементи со механика</li><li>Техничко цртање со КАД</li><li>Технологија на обработка</li><li>Електротехника и електроника</li><li>Хидропневматска техника</li><li>Мерење во енергетиката</li><li>Термотехника</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Обновливи извори на енергија</li><li>Организациско однесување</li><li>Хидраулика и пневматика</li><li>Енергетски постројки</li><li>Греење и климатизација</li><li>Хидропневматска техника</li><li>Системи за далечинско греење и ладење</li><li>Термотехника</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">IV ГОДИНА</div><ul class="subject-list"><li>Бизнис и претприемништво – изборен</li><li>Енергетска ефикасност и системи за греење, вентилација и климатизација</li><li>Автоматско управување</li><li>Гасна техника</li><li>Хидропневматска техника</li><li>Мониторинг на квалитет на вода</li><li>Термотехника</li><li>Учење преку работа</li></ul></div>
+                </div>
+                <div class="sub-major">
+                    <h3>3. Машински техничар</h3>
+                    <div class="year-block"><div class="year-title">I ГОДИНА</div><ul class="subject-list"><li>Машински елементи со механика</li><li>Машинство и други сектори</li><li>Техничко цртање со КАД</li><li>Технологија на обработка</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА</div><ul class="subject-list"><li>Машински елементи со механика</li><li>Техничко цртање со КАД</li><li>Технологија на обработка</li><li>Термодинамика</li><li>Електротехника и електроника</li><li>Технологија на обработка со деформација</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Обновливи извори на енергија</li><li>Хидраулика и пневматика</li><li>Неконвенционални методи на обработка</li><li>Компјутерско управување</li><li>Програмирање на компјутерско управувани машини</li><li>Технологија на обработка на метали со режење</li><li>Технологија на заварување</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">IV ГОДИНА</div><ul class="subject-list"><li>Бизнис и претприемништво – изборен</li><li>Енергетска ефикасност и системи за греење, вентилација и климатизација</li><li>Современи материјали и површински третман (изборна)</li><li>Конструирање на алат и уреди</li><li>Машини и опрема</li><li>Проектирање на технологии</li><li>Програмирање на компјутерски управувани машини</li><li>Учење преку работа</li></ul></div>
+                </div>
+                <div class="sub-major">
+                    <h3>4. Техничар за производно машинство</h3>
+                    <div class="year-block"><div class="year-title">I ГОДИНА</div><ul class="subject-list"><li>Машински елементи со механика</li><li>Технички пресметки</li><li>Техничко цртање со КАД</li><li>Технологија на обработка</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА</div><ul class="subject-list"><li>Електротехника и електроника</li><li>Хидраулика и пневматика</li><li>Машински елементи со механика</li><li>Технологија на обработка со деформација</li><li>Технологија на преработка на пластични маси</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Учење преку работа</li><li>Автоматско управување и програмирање</li><li>Нековенционални методи на обработка</li><li>Обновливи извори на енергија</li><li>Одржување и монтажа – изборен</li><li>Организациско однесување</li><li>Технологија на обработка на метали со режење</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">IV ГОДИНА</div><ul class="subject-list"><li>Бизнис и претриемништво – изборен</li><li>Енергетска ефикасност и системи за греење, вентилација и климатизација – изборна</li><li>Автоматско управување и програмирање</li><li>Конструирање на алат и уреди</li><li>Машини и опрема</li><li>Проектирање на технологии</li><li>Прецизна механика – изборна</li><li>Проектирање на технологии</li><li>Современи материјали и површински третман – изборна</li><li>Учење преку работа</li></ul></div>
+                </div>
+                <div class="sub-major">
+                    <h3>5. Автомеханичар (Тригодишно)</h3>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Мотори со внатрешно согорување</li><li>Моторни возила</li><li>Практична настава</li></ul></div>
+                </div>
+                <div class="sub-major">
+                    <h3>6. Машински механичар (Тригодишно)</h3>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Практична настава</li><li>Учење преку работа</li></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-soobrakaj" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-soobrakaj')">&times;</span>
+            <div class="modal-body">
+                <h2>Сообраќај и транспорт</h2>
+                <div class="download-section">
+                    <h3>Решение и наставен план</h3>
+                    <a href="https://drive.google.com/file/d/19EiKFZLbvWiGJuwIyXeB5QZpPTKruIvm/view" target="_blank" class="download-link-btn">
+                        <i class="fa-solid fa-file-lines"></i> Отвори документ
+                    </a>
+                </div>
+                <div class="sub-major">
+                    <h3>1. Техничар за транспорт и шпедиција</h3>
+                    <div class="year-block"><div class="year-title">I ГОДИНА</div><ul class="subject-list"><li>Основи на сообраќајот и логистиката</li><li>Превозни средства</li><li>Сообраќајна инфраструктура</li><li>Техничко цртање со КАД</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА</div><ul class="subject-list"><li>Учење преку работа кај работодавач</li><li>Технологија на ракување со товарот</li><li>Технологија на складирање на товарот</li><li>Логистика во транспортот</li><li>Технологија на патен транспорт</li><li>Технологија на поштенски транспорт</li><li>Технологија на железнички транспорт</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Учење преку работа</li><li>Транспорт и животна средина</li><li>Безбедност во патниот сообраќај</li><li>Комбиниран транспорт</li><li>Шпедиција и шпедитерско работење</li><li>Технологија на воден и воздушен транспорт</li><li>Организација на работата во шпедициите</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">IV ГОДИНА</div><ul class="subject-list"><li>Учење преку работа</li><li>Интелегентни транспортни системи</li><li>Комбиниран транспорт</li><li>Шпедиција и шпедитерско работење</li><li>Организација на работата во шпедициите</li><li>Транспортно право и осигурување</li><li>Учење преку работа</li></ul></div>
+                </div>
+                <div class="sub-major">
+                    <h3>2. Техничар за логистика во сообрајајот</h3>
+                    <div class="year-block"><div class="year-title">I ГОДИНА</div><ul class="subject-list"><li>Основи на сообраќајот и логистиката</li><li>Превозни средства</li><li>Сообраќајна инфраструктура</li><li>Техничко цртање со КАД</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА</div><ul class="subject-list"><li>Учење преку работа</li><li>Финансиско работење</li><li>Логистика</li><li>Осигурување</li><li>Технологија на копнен транспорт</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Учење преку работа</li><li>Транспорт и животна средина</li><li>Безбедност во патниот сообраќај</li><li>Комбиниран транспорт</li><li>Шпедиција и шпедитерско работење</li><li>Технологија на воден и воздушен транспорт</li><li>Организација на работата во шпедициите</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">IV ГОДИНА</div><ul class="subject-list"><li>Учење преку работа</li><li>Интелегентни транспортни системи</li><li>Сообраќајна култура</li><li>Комбиниран транспорт</li><li>Шпедиција и шпедитерско работење</li><li>Деловна комуникација</li><li>Осигурување</li><li>Транспортно право и осигурување</li><li>Учење преку работа</li></ul></div>
+                </div>
+                <div class="sub-major">
+                    <h3>3. Техничар за патен сообраќај</h3>
+                    <div class="year-block"><div class="year-title">I ГОДИНА</div><ul class="subject-list"><li>Основи на сообраќајот и логистиката</li><li>Превозни средства</li><li>Сообраќајна инфраструктура</li><li>Техничко цртање со КАД</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА</div><ul class="subject-list"><li>Учење преку работа</li><li>Технологија на ракување со товарот</li><li>Технологија на складирање на товарот</li><li>Логистика во транспортот</li><li>Експлоатација на патни возила</li><li>Организација на работењето</li><li>Патишта и улици</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Учење преку работа</li><li>Транспорт и животна средина</li><li>Безбедност во патниот сообраќај</li><li>Комбиниран транспорт</li><li>Шпедиција и шпедитерско работење</li><li>Технологија на воден и воздушен транспорт</li><li>Организација на работата во шпедициите</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">IV ГОДИНА</div><ul class="subject-list"><li>Учење преку работа</li><li>Интелегентни транспортни системи</li><li>Автобази и автостаници</li><li>Безбедност и регулирање во патниот сообраќај</li><li>Експлоатација на патни возила</li><li>Организација на патниот сообраќај</li><li>Психологија и култура во сообрајајот</li><li>Урбани транспортни системи</li><li>Учење преку работа</li></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-graf" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-graf')">&times;</span>
+            <div class="modal-body">
+                <h2>Графичарство</h2>
+                <div class="download-section">
+                    <h3>Решение и наставен план</h3>
+                    <a href="https://drive.google.com/file/d/1d2JkifRdao7nknO_2EN0CwZ_tcn6sV3x/view" target="_blank" class="download-link-btn">
+                        <i class="fa-solid fa-file-lines"></i> Отвори документ
+                    </a>
+                </div>
+                <div class="sub-major">
+                    <h3>Графички техничар</h3>
+                    <div class="year-block"><div class="year-title">I ГОДИНА (2025)</div><ul class="subject-list"><li>Графички материјали</li><li>Основи на графичарство и сродни сектори</li><li>Основи на графички дизајн</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА - ЗА СИТЕ ПРОФИЛИ</div><ul class="subject-list"><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА – Графички техничар</div><ul class="subject-list"><li>Книговрзување</li><li>Печатарски машини</li><li>Преработка на хартија</li><li>Сито и висок печат</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА – ЗА СИТЕ ПРОФИЛИ</div><ul class="subject-list"><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА – Графички техничар</div><ul class="subject-list"><li>Организациско работење</li><li>Книговрзување</li><li>Флексо и бакро печате</li><li>Фотографски процеси</li><li>Картонажа и амбалажа</li><li>Печатарски машини</li><li>Рециклирање на графички материјали</li><li>Специјални постапки на умножување</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА – Графички уредник – дизајнер</div><ul class="subject-list"><li>Дигитален печат</li><li>Форми на графичкиот дизајн</li><li>Графичка монтажа</li><li>Конструкција на словни знаци</li><li>Системи на бои</li><li>Техничко уредување на публикации</li><li>Векторска и растерска графика</li><li>Визуелен идентитет</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">IV ГОДИНА – ЗА СИТЕ ПРОФИЛИ</div><ul class="subject-list"><li>Бизнис и претприемништво – изборен</li><li>Дигитален печат</li><li>Еко-амбалажа</li><li>Електронска изработка на печатарски форми</li><li>Електронска обработка на текст и слика</li><li>Хемиграфија</li><li>Мерење на бои</li><li>Офсет печат</li><li>Учење преку работа</li></ul></div>
+                </div>
+                <div class="sub-major">
+                    <h3>Графички уредник – дизајнер</h3>
+                    <div class="year-block"><div class="year-title">I ГОДИНА</div><ul class="subject-list"><li>Графички материјали</li><li>Основи на графичарство и сродни сектори</li><li>Основи на графички дизајн</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА</div><ul class="subject-list"><li>Дигитален печат</li><li>Дигитализација на словни знаци</li><li>Дизајн процес</li><li>Графички стандарди</li><li>Печатарски форми</li><li>Пробен печат</li><li>Векторска и растерска графика</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Учење преку работа</li><li>Дигитален печат</li><li>Дигитализација на словни знаци</li><li>Дизајн процес</li><li>Графички монтажа</li><li>Конструкција на словни знаци</li><li>Системи на бои</li><li>Техничко уредување на публикации</li><li>Векторска и растерска графика</li><li>Визуелен идентитет</li><li>Учење преку работа</li></ul></div>
+                    <div class="year-block"><div class="year-title">IV ГОДИНА</div><ul class="subject-list"><li>Бизнис и претриемништво – изборен</li><li>Дигитален печат</li><li>Еко-амбалажа</li><li>Електронска изработка на печатарски форми</li><li>Електронска обработка на текст и слика</li><li>Хемиграфија</li><li>Мерење на бои</li><li>Офсет печат</li><li>Учење преку работа</li></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sport" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-sport')">&times;</span>
+            <div class="modal-body">
+                <h2>Спортска Гимназија</h2>
+                <div class="download-section">
+                    <h3>Решение и наставен план</h3>
+                    <a href="https://csoo.edu.mk/images/stories/nastaven%20plan%20sportska%20gimnazija.pdf" target="_blank" class="download-link-btn">
+                        <i class="fa-solid fa-file-lines"></i> Отвори документ
+                    </a>
+                </div>
+                <div class="sub-major">
+                    <div class="year-block"><div class="year-title">I ГОДИНА</div><ul class="subject-list"><li>Нема</li></ul></div>
+                    <div class="year-block"><div class="year-title">II ГОДИНА</div><ul class="subject-list"><li>Кинезиологија</li><li>Основи на менаџмент</li><li>Основи на теорија и методика на спортот</li></ul></div>
+                    <div class="year-block"><div class="year-title">III ГОДИНА</div><ul class="subject-list"><li>Биомеханика</li><li>Спортска педагогија</li></ul></div>
+                    <div class="year-block"><div class="year-title">IV ГОДИНА</div><ul class="subject-list"><li>Методика на спортот</li><li>Спортска медицина</li></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">РИЧКО</div>
+                    <p>Средно општинско училиште за стручно образование. Формираме кадри за иднината.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/rickoedumk"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/mladinskaricko"><i class="r-symbol">M</i></a>
+                        <a href="https://mk.linkedin.com/company/rickoedumk"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/u.u.z_ricko?igsh=YXB3cnBxc3ljbzF0"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h5 style="color:#fff; margin-bottom:20px;">Институции</h5>
+                    <ul class="footer-links">
+                       <li style="color: #BDC3C7;"><a href="https://mon.gov.mk/">Министерство за образование</a></li>
+                        <li style="color: #BDC3C7;"><a href="https://bro.gov.mk/">Биро за развој на образование</a></li>
+                        <li style="color: #BDC3C7;"><a href="https://www.prilep.gov.mk/">Општина Прилеп</a></li>
+                        <li style="color: #BDC3C7;"><a href="https://ednevnik.edu.mk/Account/Login?ReturnUrl=%2f">Е-Дневник</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 style="color:#fff; margin-bottom:20px;">Контакт</h5>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Прилеп, Македонија</li>
+                        <li><i class="fas fa-phone"></i> +389 48 415 376</li>
+                        <li><i class="fas fa-envelope"></i> &#114;&#105;&#099;&#107;&#111;&#109;&#097;&#115;&#115;&#117;&#109;&#050;&#048;&#050;&#054;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                © 2026 СОУ „Ристе Ристески - Ричко". Сите права задржани.
+            </div>
+        </div>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>
