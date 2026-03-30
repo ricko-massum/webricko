@@ -76,6 +76,9 @@
     .about-hero { background-position: left top; }
     .slider-controls { justify-content: center; }
     .history-video iframe { height: auto; aspect-ratio: 16 / 9; }
+    .headmaster-card { flex-direction: column; align-items: center; gap: 30px; }
+    .admin-secondary-grid {  grid-template-columns: 1fr; gap: 30px; }
+    .admin-person { max-width: 100%; }
 }
 
 @media (max-width: 480px) {
