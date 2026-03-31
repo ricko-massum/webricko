@@ -255,7 +255,7 @@ footer {
     color: #bdc3c7;
     padding: 80px 0 20px;
     font-size: 0.9rem;
-    margin-top: auto; /* Pushes footer to bottom if page content is short */
+    margin-top: auto; 
 }
 
 .footer-grid {
@@ -291,17 +291,15 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.1);
     padding-top: 25px; text-align: center; font-size: 0.8rem;
 }
-/* Step 1: Fix for sticky header overlap */
+
 #location, #history, #headmaster, #teachers {
     scroll-margin-top: calc(var(--header-height) + 20px);
 }
 
-/* Typography polish: letter-spacing */
 h1, h2 {
     letter-spacing: -1px;
 }
 
-/* Step 6: Logo-badge border polish */
 .logo-badge {
     border: 1px solid rgba(0,0,0,0.05);
 }
