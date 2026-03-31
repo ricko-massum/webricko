@@ -32,8 +32,8 @@
    ==============================================*/
 * { margin: 0; padding: 0; box-sizing: border-box; outline: none; }
 
-html { scroll-behavior: smooth; font-size: 16px; 
-        scroll-padding-top: 80px; }
+html { scroll-behavior: smooth; font-size: 16px; }
+      
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -50,11 +50,6 @@ body {
 a { text-decoration: none; color: inherit; transition: var(--transition-fast); }
 ul { list-style: none; }
 img { display: block; max-width: 100%; height: auto; }
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
 h1, h2, h3, h4, h5, h6 { color: var(--ricko-blue); font-weight: 800; line-height: 1.2; }
 p { color: var(--steel-blue); margin-bottom: 15px; font-weight: 400; }
