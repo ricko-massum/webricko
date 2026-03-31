@@ -299,6 +299,11 @@ footer {
     padding-top: 25px; text-align: center; font-size: 0.8rem;
 }
 
+/* Fix for sticky header overlap  */
+#location, #history, #headmaster, #teachers {
+    scroll-margin-top: calc(var(--header-height) + 20px);
+}
+
 /* ==========================================================================
    6. GLOBAL RESPONSIVE RULES (Header & Nav)
    ========================================================================== */
