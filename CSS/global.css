@@ -34,6 +34,13 @@
 
 html { scroll-behavior: smooth; font-size: 16px; }
 
+.reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--white);
