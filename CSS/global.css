@@ -181,20 +181,29 @@ header {
 .logo-badge img { width: 85%; height: 85%; object-fit: contain; }
 
 .header-title {
-    position: absolute;
-    left: calc(5% + 160px);
-    top: 50%;
-    transform: translateY(-50%);
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    line-height: 1.3;
-    color: var(--ricko-blue);
-    letter-spacing: 1px;
-    pointer-events: none;
-}
+        position: relative;
+        margin-right: auto;
+        margin-left: 20px;
+        transform: none;
+        top: auto;
+        left: calc(5% + 160px);
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        line-height: 1.3;
+        color: var(--ricko-blue);
+        letter-spacing: 1px;
+        pointer-events: none;
+    }
 
-.header-title strong { font-weight: 900; display: block; font-size: 1.3rem; }
-.header-title span { color: var(--orange); }
+    .header-title strong {
+        font-weight: 900;
+        display: inline;
+        font-size: 1.3rem;
+    }
+
+    .header-title span {
+        color: var(--orange);
+    }
 
 .nav-menu { display: flex; gap: 40px; }
 
