@@ -298,21 +298,6 @@ footer {
     padding-top: 25px; text-align: center; font-size: 0.8rem;
 }
 
-
-/* Step 1: Fix for sticky header overlap */
-#location, #history, #headmaster, #teachers {
-    scroll-margin-top: calc(var(--header-height) + 20px);
-}
-
-/* Typography polish: letter-spacing */
-h1, h2 {
-    letter-spacing: -1px;
-}
-
-/* Step 6: Logo-badge border polish */
-.logo-badge {
-    border: 1px solid rgba(0,0,0,0.05);
-}
 /* ==========================================================================
    6. GLOBAL RESPONSIVE RULES (Header & Nav)
    ========================================================================== */
