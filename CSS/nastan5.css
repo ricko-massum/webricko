@@ -11,9 +11,7 @@
 /* FIXED SECTION START */
 .main-img-wrapper { 
     width: 100%; 
-    /* This makes the height 75% of the width (a nice tall "square-ish" rectangle). 
-       Use 1 / 1 if you want a perfect, tall square. */
-    aspect-ratio: 16 / 10; 
+    height: 75%
     
     border-radius: 24px; 
     overflow: hidden; 
